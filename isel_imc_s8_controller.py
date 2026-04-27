@@ -1850,7 +1850,7 @@ if __name__ == "__main__":
     controller = IselController()
     
     # Start TCP Server on port 5000 for MATLAB communication
-    api = ApiServer(controller, host='127.0.0.1', port=5000)
+    api = ApiServer(controller, host='0.0.0.0', port=5000)
     api.start()
 
     # Start Main GUI
